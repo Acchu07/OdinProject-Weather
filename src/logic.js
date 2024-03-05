@@ -1,7 +1,7 @@
 import domManipulation, { setDomFutureForeCast } from './dom';
 
 export default async function getCityWeatherInformation(cityName) {
-  const weatherApiURL = `http://api.weatherapi.com/v1/current.json?key=195e2daa2fe348619e533508240303&q=${cityName}`;
+  const weatherApiURL = `https://api.weatherapi.com/v1/current.json?key=195e2daa2fe348619e533508240303&q=${cityName}`;
   const response = await fetch(weatherApiURL, { mode: 'cors' });
   if (response.ok) {
     const objectData = await response.json();
@@ -43,7 +43,7 @@ function assignValuesPlaceForecast(cityName, objectData) {
 }
 
 export function getCityWeatherForecast(cityName) {
-  const weatherApiURL = `http://api.weatherapi.com/v1/forecast.json?key=195e2daa2fe348619e533508240303&q=${cityName}&days=2`;
+  const weatherApiURL = `https://api.weatherapi.com/v1/forecast.json?key=195e2daa2fe348619e533508240303&q=${cityName}&days=2`;
   fetch(weatherApiURL, { mode: 'cors' })
     .then((response) => {
       return response.json();
