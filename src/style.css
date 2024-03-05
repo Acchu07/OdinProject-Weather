@@ -1,0 +1,55 @@
+:root{
+    --base-width: 10;
+}
+
+body{
+    background-color: orange;
+}
+
+/* Common */
+
+form, .outer-box, .inner-flex{
+    display: flex;
+}
+
+header{
+    text-align: center;
+}
+
+form{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    width: calc(var(--base-width) * 1vh);
+}
+
+input{
+    width: calc(var(--base-width) * 2.5vh);
+}
+
+.outer-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-box{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+    width: 98vw;
+}
+
+#weather-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.inner-flex{
+    justify-content: space-around;
+    width: 98vw;
+}
+

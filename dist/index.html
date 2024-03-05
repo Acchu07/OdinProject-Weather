@@ -1,14 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template HTML Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odin Project Weather</title>
 <script defer src="main.js"></script></head>
+
 <body>
-    <header>
-        <h1>Template HTML Document</h1>
-    </header>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sed sapiente dolorem iure quia itaque eius blanditiis quas nam dolore? Nam sapiente rerum at, ipsum labore excepturi sequi officia eum!</p>
+  <header>
+    <h1>Odin Project Weather</h1>
+  </header>
+  <form action="#">
+    <label for="search-city">Weather For Location</label>
+    <input type="text" id="search-city" name="search-city">
+    <button>Search</button>
+  </form>
+  <article class="outer-box">
+    <h2>Today's Forecast</h2>
+    <div class="inner-box">
+      <article>
+        <img src="" alt="weather-icon">
+        <h1>current temperature</h1>
+      </article>
+      <article id="weather-info">
+        <p>Feels Like: </p>
+        <p>Humidity: </p>
+        <p>Wind Speed: </p>
+        <p>Visibility: </p>
+        <p>UV: </p>
+        <p>Pressure: </p>
+      </article>
+  </article>
+  </div>
+
+  <div class="outer-box">
+    <h2>Future Forecast</h2>
+    <article class="inner-flex">
+      <article>
+        <h2>Date</h2>
+        <p>Weather Status</p>
+        <img src="" alt="weather-icon">
+      </article>
+      <article>
+        <h2>Date</h2>
+        <p>Weather Status</p>
+        <img src="" alt="weather-icon">
+      </article>
+    </article>
+  </div>
+  <img src="" alt="Giphy Image">
 </body>
+
 </html>
