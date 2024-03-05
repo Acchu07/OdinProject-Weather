@@ -14,22 +14,22 @@
   <form action="#">
     <label for="search-city">Weather For Location</label>
     <input type="text" id="search-city" name="search-city">
-    <button>Search</button>
+    <button id="search-button">Search</button>
   </form>
   <article class="outer-box">
-    <h2>Today's Forecast</h2>
+    <h2 id="place-forecast"></h2>
     <div class="inner-box">
       <article>
-        <img src="" alt="weather-icon">
-        <h1>current temperature</h1>
+        <img src="" alt="weather-icon" id="current-temperature">
+        <h1 id="temp_c"></h1>
       </article>
       <article id="weather-info">
-        <p>Feels Like: </p>
-        <p>Humidity: </p>
-        <p>Wind Speed: </p>
-        <p>Visibility: </p>
-        <p>UV: </p>
-        <p>Pressure: </p>
+        <p id="feelslike_c">Feels Like: </p>
+        <p id="humidity">Humidity: </p>
+        <p id="wind_kph">Wind Speed: </p>
+        <p id="vis_km">Visibility: </p>
+        <p id="uv">UV: </p>
+        <p id="pressure_in">Pressure: </p>
       </article>
   </article>
   </div>
@@ -37,12 +37,12 @@
   <div class="outer-box">
     <h2>Future Forecast</h2>
     <article class="inner-flex">
-      <article>
+      <article class="forecast">
         <h2>Date</h2>
         <p>Weather Status</p>
         <img src="" alt="weather-icon">
       </article>
-      <article>
+      <article class="forecast">
         <h2>Date</h2>
         <p>Weather Status</p>
         <img src="" alt="weather-icon">
